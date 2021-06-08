@@ -28,7 +28,9 @@ public class Controuler {
 	
 	@GetMapping("one")
 	public @ResponseBody Object findById( @Param("id") String id) {
-		
+		System.out.println("------------------------------------get one in service univercity -------------------------------");
+		System.out.println("id = "+ id);
+		System.out.println(repository.findById(id).get().toString());
 		return  repository.findById(id);
 	}
 }

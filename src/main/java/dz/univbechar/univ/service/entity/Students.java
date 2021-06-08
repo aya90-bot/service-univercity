@@ -73,6 +73,11 @@ public class Students {
 	public void setLavel(String lavel) {
 		this.lavel = lavel;
 	}
+	@Override
+	public String toString() {
+		return "Students [ID=" + ID + ", name=" + name + ", famlyname=" + famlyname + ", sp=" + sp + ", univ=" + univ
+				+ ", promotion=" + promotion + ", lavel=" + lavel + "]";
+	}
 	
 
 }
